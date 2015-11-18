@@ -41,6 +41,7 @@ header nav .lines {
 header nav .line {
     border: 1px solid black;
     margin-bottom: 8px;
+
 }
 
 main {
@@ -52,6 +53,7 @@ main {
 .asides {
   font-size: 0;
 }
+
 
 aside {
   border: 1px solid green;
@@ -76,4 +78,28 @@ footer section {
   width: 30%;
   margin: 0 1.5% 10px 1.5%;
   height: 50px;
+}
+
+@media (max-width:520px) {
+
+  aside {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    border:1px solid green;
+  } 
+  nav ul li {
+    display: none;
+  }
+  header nav .lines {
+    display:inline-block;
+    position: relative;
+    left: 82%;
+  }
+
+  footer section {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+  }
 }

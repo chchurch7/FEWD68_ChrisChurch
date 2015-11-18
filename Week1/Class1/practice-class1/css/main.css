@@ -1,0 +1,29 @@
+	body {
+		margin: 0 auto;
+		background-color: black;
+	}
+	.nav {
+		width: 100%;
+		position: fixed;
+		margin: 0 auto;
+		height: 100px;
+		padding-top: 150px;
+	}
+	.nav-type {
+		text-align: center;
+		color: #fff;
+		margin: 0 auto;
+		font-size: 400px;
+    	transform:rotate(10deg);
+	}
+	.the-copy {
+		font-size: 1000px;
+		font-family: colfax;
+		color: #fff;
+	}
+	img {
+		width: 100%;
+	}
+	footer {
+
+	}

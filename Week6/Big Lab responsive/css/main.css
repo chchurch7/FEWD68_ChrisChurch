@@ -33,12 +33,13 @@ h3 {
 p {
 	margin: 0 0 1.5em 0;
 }
-nav .line{
+#hamburger .line{
 	width: 3em;
 	height: .3em;
 	background: yellow;
 	border-radius: 1em;
 	margin-top: .25em;
+	display:none; 
 }
 nav .line:first-of-type{
 	margin-top:.7em;
@@ -165,49 +166,81 @@ footer {
 	color: white;
 	padding: 2% 3%;
 }
-@media screen and (max-width:1080px) and (min-width: 980px){
-	nav{
 
-		font-size: 18px;
+@media screen and (max-width:768px) {
+ 
+	.tout {
+		display: block;
+		width: 100%;
+		padding: 32px 0px;
+    border-bottom: 1px solid black;
+    box-shadow: none;
 	}
-}
-@media screen and (max-width:980px) and (min-width: 768px){
-	nav{
-		font-size: 12px;
+	.tout:nth-child(3){
+		border-bottom: none;
 	}
-}
-@media screen and (max-width: 768px){
-	body{
-		font-size: 16px;
+	#page-header #hamburger {
+		display: block;
+    position: absolute;
+    top: 0.25em;
+    right: 0.5em;
 	}
-	nav{
-		width:100%;
-	}
-	.tagline,.blurb > p:first-of-type{
-		display: none;
-	}
-	.blurb{
-		width:60%;
-	}
-	.tout{
-		width:94%;
-		box-shadow: none;
-	}
-	#page-header nav li{
+	#page-header nav li {
 		float: none;
 	}
-	#page-header nav li:first-child{
-		display:block;
-		position: absolute;
-		top:.25em;
-		right:.5em;
+	.blurb {
+		width: 100%;
+		padding:0%;
 	}
-	ul{
-		height:0;
-		transition:height 1s;
-		overflow: hidden;
+
+	#page-header nav {
+		float:none;
 	}
+
+	#page-header a {
+		position: relative;
+    top: -10px;
+	}
+	#page-header {
+		padding:8px 3%;
+	}
+	nav .line {
+		width: 1.7em;
+    height: 0.2em;
+	}
+	.wrapper {
+		padding: 0px 20px;
+	}
+
+	.blurb p:nth-child(2){
+		display: none;
+	}
+
+	.tagline {
+		display: none;
+	}
+
+	#page-header h1 {
+		font-size: 1.3em;
+	}
+
+	footer .wrapper {
+		font-size: 18px;
+	}
+
+	nav li a {
+		font-size: 20px;
+	}
+	#page-header h1 {
+		float: none;
+	}
+	
+
 }
-.slideDown{
-	height:20em;
+
+@media screen and (min-width:768px) and (max-width:980px) {
+		nav li a {
+			font-size: 12px;
+		}
 }
+
